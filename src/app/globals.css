@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Définition des variables CSS globales pour les couleurs et les styles */
+@layer base {
+    :root {
+        /* Couleurs de fond et de premier plan */
+        --background: 0 0% 100%;
+        --foreground: 0 0% 0%;
+
+        /* Couleurs des cartes */
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 0%;
+
+        /* Couleurs des popovers */
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 0%;
+
+        /* Couleurs principales */
+        --primary: 0 0% 100%;
+        --primary-foreground: 0 0% 0%;
+
+        /* Couleurs secondaires */
+        --secondary: 0 0% 100%;
+        --secondary-foreground: 0 0% 0%;
+
+        /* Couleurs atténuées */
+        --muted: 0 0% 100%;
+        --muted-foreground: 0 0% 0%;
+
+        /* Couleurs d'accentuation */
+        --accent: 0 0% 100%;
+        --accent-foreground: 0 0% 0%;
+
+        /* Couleurs destructives */
+        --destructive: 0 0% 100%;
+        --destructive-foreground: 0 0% 0%;
+
+        /* Couleurs des bordures et des entrées */
+        --border: 0 0% 100%;
+        --input: 0 0% 100%;
+        --ring: 0 0% 0%;
+
+        /* Rayon des bordures */
+        --radius: 0.5rem;
+
+        /* Couleurs des graphiques */
+        --chart-1: 359 2% 10%;
+        --chart-2: 240 1% 26%;
+        --chart-3: 240 1% 42%;
+        --chart-4: 240 1% 58%;
+        --chart-5: 240 2% 74%;
+    }
+
+    /* Définition des variables CSS pour le mode sombre */
+    .dark {
+        --background: 0 0% 0%;
+        --foreground: 0 0% 100%;
+
+        --card: 0 0% 0%;
+        --card-foreground: 0 0% 100%;
+
+        --popover: 0 0% 0%;
+        --popover-foreground: 0 0% 100%;
+
+        --primary: 0 0% 0%;
+        --primary-foreground: 0 0% 100%;
+
+        --secondary: 0 0% 0%;
+        --secondary-foreground: 0 0% 100%;
+
+        --muted: 0 0% 0%;
+        --muted-foreground: 0 0% 100%;
+
+        --accent: 0 0% 0%;
+        --accent-foreground: 0 0% 100%;
+
+        --destructive: 0 0% 0%;
+        --destructive-foreground: 0 0% 100%;
+
+        --border: 0 0% 14.9%;
+        --input: 0 0% 14.9%;
+        --ring: 0 0% 83.1%;
+
+        --chart-1: 359 2% 90%;
+        --chart-2: 240 1% 74%;
+        --chart-3: 240 1% 58%;
+        --chart-4: 240 1% 42%;
+        --chart-5: 240 2% 26%;
+    }
+}
+
+/* Application des styles de base */
+@layer base {
+    * {
+        @apply border-border; /* Applique la couleur de bordure définie */
+    }
+    body {
+        @apply bg-background text-foreground; /* Applique les couleurs de fond et de texte définies */
+    }
+}
