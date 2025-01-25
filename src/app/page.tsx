@@ -4,11 +4,22 @@ import Project from '@/components/project'
 import { Button } from '@/components/ui/button'
 import { CONFIG } from '@/config'
 import Link from 'next/link'
+import Image from 'next/image';
 
 export default function Home() {
     return (
         <div className='flex flex-col gap-12'>
             <Header />
+            {/* Animation GIF or Waving Hand */}
+            <div className="flex justify-center bg-white rounded-lg">
+                <Image
+                    src="/wave.gif" // Replace with the path to your GIF
+                    alt="Waving Hand"
+                    width={200}
+                    height={100}
+                    // className="animate-bounce"
+                />
+            </div>
             <div className='animate-slide-from-down-and-fade-4 space-y-2 px-2'>
                 <h2 className='font-semibold'>GET TO KNOW ME ? </h2>
                 <p className="leading-6 border border-muted-foreground p-4 rounded-md animate-slide-from-down-and-fade-5">
