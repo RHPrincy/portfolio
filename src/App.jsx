@@ -22,6 +22,7 @@ import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
 import PopoutElement from "./components/PopoutElement";
+import { Analytics } from "@vercel/analytics/react";
 
 /**
  * Main App component
@@ -99,6 +100,7 @@ const App = () => {
                 <Spacer size={16} />
                 {popout && <PopoutElement work={popout} type={popoutType} />}
             </PopoutContainer>
+            <Analytics />
         </Container>
     );
 };
