@@ -23,6 +23,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
 import PopoutElement from "./components/PopoutElement";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 /**
  * Main App component
@@ -101,6 +102,7 @@ const App = () => {
                 {popout && <PopoutElement work={popout} type={popoutType} />}
             </PopoutContainer>
             <Analytics />
+            <SpeedInsights />
         </Container>
     );
 };
