@@ -23,7 +23,7 @@ const ExperienceSection = ({ onInfoClick }) => {
     return (
         <Split style={{ alignItems: "flex-start" }}>
             <SplitSection>
-                <H3>Experience professionnelle</H3>
+                <H3>Experiences</H3>
                 <Spacer size={8} />
                 <List>
                     {work.map((workItem, i) => (
