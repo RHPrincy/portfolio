@@ -18,9 +18,9 @@ const Skill = () => {
         "Développeur JavaScript",
         "Développeur TypeScript",
         "Développeur IA",
-        "Data Scientist Junior",
+        "Data Scientist",
         "Développeur Python",
-        "Étudiant en Informatique",
+        "Spécialiste en Automatisation & IA",
     ];
 
     const [skill, setSkill] = useState(options[0]);
